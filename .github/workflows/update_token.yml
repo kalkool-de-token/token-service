@@ -2,7 +2,7 @@ name: Update token every 10 min
 
 on:
   schedule:
-    - cron: "*/10 * * * *"       # every 10 minutes
+    - cron: "*/2 * * * *"       # every 10 minutes
   workflow_dispatch:             # allow manual run for testing
   
 permissions:
