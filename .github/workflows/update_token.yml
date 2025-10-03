@@ -4,7 +4,10 @@ on:
   schedule:
     - cron: "*/10 * * * *"       # every 10 minutes
   workflow_dispatch:             # allow manual run for testing
-
+  
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
